@@ -18,7 +18,7 @@ class Data extends AbstractHelper
         parent::__construct($context);
     }
 
-    public function getConfigData(?string $code, $path)
+    public function getConfigData(?string $path)
     {
         return $this->scopeConfig->getValue($path, \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
