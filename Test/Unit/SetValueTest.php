@@ -14,10 +14,22 @@ class SetValueTest extends \PHPUnit\Framework\TestCase
         $config = [
             'scope' => "default",
             'path' => "/web/seo/use_rewrites",
-            'value' => "0"
+            'value' => "0",
         ];
 
         $this->assertNotSame($config, ['scope' => "default", 'path' => "/web/seo/use_rewrites", "value" => "1"]);
+    }
+
+    public function testPutEncrypted()
+    {
+        $config = [
+            'scope' => "default",
+            'path' => "/web/seo/use_rewrites",
+            'value' => "0",
+            'encrypted' => true
+        ];
+
+        $this->assertArrayHasKey('encrypted',$config, ['scope' => "default", 'path' => "/web/seo/use_rewrites", "value" => "1"]);
     }
 }
 
