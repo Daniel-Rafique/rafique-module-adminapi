@@ -10,12 +10,10 @@ use Magento\Framework\Encryption\EncryptorInterface;
 
 class SetValueManagement implements \Rafique\AdminApi\Api\SetValueManagementInterface
 {
-
-    const STORE = 'default';
     /**
      * Core store config
      *
-     * @var \Rafique\AdminApi\Helper\Data
+     * @var Data
      */
     protected $helper;
     protected $writer;
