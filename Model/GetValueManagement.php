@@ -3,7 +3,7 @@
 
 namespace Rafique\AdminApi\Model;
 
-
+use \Magento\Framework\App\RequestInterface;
 use Rafique\AdminApi\Helper\Data;
 
 class GetValueManagement implements \Rafique\AdminApi\Api\GetValueManagementInterface
@@ -14,11 +14,14 @@ class GetValueManagement implements \Rafique\AdminApi\Api\GetValueManagementInte
      * @var Data
      */
     protected $helper;
+    protected $request;
 
     public function __construct(
-        Data $helper
+        Data $helper,
+        RequestInterface $request
     ) {
         $this->helper = $helper;
+        $this->request = $request;
     }
 
     /**
@@ -26,8 +29,8 @@ class GetValueManagement implements \Rafique\AdminApi\Api\GetValueManagementInte
      */
     public function getGetValue($param)
     {
-        // Use the GET variable to retrieve the path because of stupid Magento
-       return $this->helper->getConfigData($param, $_GET['path']);
+        // Use RequestInterface to get the path param
+        return $this->helper->getConfigData($param, $this->request->getParam('path'));
     }
 }
 
