@@ -17,6 +17,7 @@ A simple module to GET and SET admin configuration values using Magento API
 
 ### Type 1: Zip file
 
+ - Clone or download from github: https://github.com/Daniel-Rafique/rafique-module-adminapi
  - Unzip the zip file in `app/code/Rafique`
  - Enable the module by running `php bin/magento module:enable Rafique_AdminApi`
  - Apply database updates by running `php bin/magento setup:upgrade`\*
@@ -25,7 +26,7 @@ A simple module to GET and SET admin configuration values using Magento API
 ### Type 2: Composer
 
  - Make the module available in a composer repository for example:
-    - public repository `packagist.org`
+    - public repository `https://packagist.org/packages/rafique/module-adminapi`
     - public github repository as vcs
  - Install the module composer by running `composer require rafique/module-adminapi`
  - enable the module by running `php bin/magento module:enable Rafique_AdminApi`
