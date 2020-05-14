@@ -1,0 +1,22 @@
+{
+    "name": "rafique/module-adminapi",
+    "description": "A simple module to GET and SET admin configuration values using Magento API",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "d.rafique@vyceversa.co.uk",
+            "name": "VYCEVERSA"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Rafique\\AdminApi\\": ""
+        }
+    }
+}
