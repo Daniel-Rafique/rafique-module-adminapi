@@ -1,6 +1,6 @@
 # Magento 2 Module Rafique AdminApi
 
-    ``rafique/module-adminapi``
+    rafique/module-adminapi
 
  - [Main Functionalities](#markdown-header-main-functionalities)
  - [Installation](#markdown-header-installation)
@@ -49,11 +49,11 @@ No Admin UI
 	- PUT - Rafique\AdminApi\Api\SetValueManagementInterface > Rafique\AdminApi\Model\SetValueManagement
 	        Make a POST request with an array in raw format. 
 	        
-	        ``` 
+	        
 	         {
              	"param": {"path":"web/seo/use_rewrites", "value":"1", "scope":"default", "encrypt":true}
              }
-	         ```
+	         
 
  - Helper
 	- Rafique\AdminApi\Helper\Data
