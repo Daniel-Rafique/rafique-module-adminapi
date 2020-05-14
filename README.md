@@ -27,7 +27,6 @@ A simple module to GET and SET admin configuration values using Magento API
  - Make the module available in a composer repository for example:
     - public repository `packagist.org`
     - public github repository as vcs
- - Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
  - Install the module composer by running `composer require rafique/module-adminapi`
  - enable the module by running `php bin/magento module:enable Rafique_AdminApi`
  - apply database updates by running `php bin/magento setup:upgrade`\*
