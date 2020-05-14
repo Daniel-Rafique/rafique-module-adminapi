@@ -4,7 +4,9 @@
 namespace Rafique\AdminApi\Test\Unit;
 
 
-class GetValueTest extends \PHPUnit\Framework\TestCase
+use PHPUnit\Framework\TestCase;
+
+class GetValueTest extends TestCase
 {
 
     /**

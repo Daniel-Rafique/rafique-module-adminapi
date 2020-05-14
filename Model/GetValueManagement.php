@@ -8,11 +8,10 @@ use Rafique\AdminApi\Helper\Data;
 
 class GetValueManagement implements \Rafique\AdminApi\Api\GetValueManagementInterface
 {
-    const STORE = 'default';
     /**
      * Core store config
      *
-     * @var \Rafique\AdminApi\Helper\Data
+     * @var Data
      */
     protected $helper;
 

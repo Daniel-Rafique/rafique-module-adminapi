@@ -4,7 +4,9 @@
 namespace Rafique\AdminApi\Test\Unit;
 
 
-class SetValueTest extends \PHPUnit\Framework\TestCase
+use PHPUnit\Framework\TestCase;
+
+class SetValueTest extends TestCase
 {
     /**
      * We test to validate if we have a different password from the one previously set
