@@ -30,7 +30,7 @@ class GetValueManagement implements \Rafique\AdminApi\Api\GetValueManagementInte
     public function getGetValue($param)
     {
         // Use RequestInterface to get the path param
-        return $this->helper->getConfigData($param, $this->request->getParam('path'));
+        return $this->helper->getConfigData($this->request->getParam('path'), $param);
     }
 }
 

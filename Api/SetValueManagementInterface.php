@@ -10,7 +10,7 @@ interface SetValueManagementInterface
     /**
      * PUT for SetValue api
      * @param string[] $param
-     * @return string[]
+     * @return string[]|null
      */
     public function putSetValue($param);
 }

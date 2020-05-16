@@ -10,7 +10,7 @@ interface GetValueManagementInterface
     /**
      * GET for GetValue api
      * @param string $param
-     * @return array
+     * @return string[]|null
      */
     public function getGetValue($param);
 }
