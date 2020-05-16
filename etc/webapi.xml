@@ -3,13 +3,13 @@
 	<route method="GET" url="/V1/rafique-adminapi/getvalue">
 		<service class="Rafique\AdminApi\Api\GetValueManagementInterface" method="getGetValue"/>
 		<resources>
-			<resource ref="anonymous"/>
+			<resource ref="Magento_Backend::store"/>
 		</resources>
 	</route>
 	<route method="PUT" url="/V1/rafique-adminapi/setvalue">
 		<service class="Rafique\AdminApi\Api\SetValueManagementInterface" method="putSetValue"/>
 		<resources>
-			<resource ref="anonymous"/>
+			<resource ref="Magento_Backend::store"/>
 		</resources>
 	</route>
 </routes>
